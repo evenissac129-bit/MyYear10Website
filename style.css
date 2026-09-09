@@ -9,7 +9,7 @@ html {
     box-sizing: border-box;
 }
 
-/* reset for images to ensure they ar 100% of the parent container width */
+/* reset for images to ensure they are 100% of the parent container width */
 img {
     width: 100%;
 }
@@ -108,11 +108,32 @@ img {
     text-align: center;
 }
 
-
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
+/* Styling for a footer section to take a bit of space at the bottom of the page */
 .footer{
     background-color: rgb(71, 71, 71);
     color: white;
     text-align: right;
     padding: 3em 3em;
+}
+
+/* ==========================================================================
+   ADDED: VIDEO ANIMATION CONTAINER STYLING 
+   This makes your video look exactly like your image cards (same background, 
+   shadow, and curves) and fills the 3rd slot of your 3-column layout grid.
+   ========================================================================== */
+.video-container {
+    background-color: rgb(71, 71, 71);
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 0.3em; /* Slightly rounded edges inside the card */
+    display: block;
 }

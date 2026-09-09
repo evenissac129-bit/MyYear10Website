@@ -3,36 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"
+    <!-- FIXED: Added the missing closing angle bracket '>' to the stylesheet link -->
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric - portofolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <style>
+        /* ========================================== */
+        /* VIDEO ANIMATION STYLING PLACE             */
+        /* ========================================== */
+        /* Styles the video player layout box inside your 3D section */
+        .video-container {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            background-color: #000;
+            margin-top: 20px;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<!-- This is the main body of the website- ALL your content goes AFTER the <body> tag and before the </body> tag -->
+
 <body>
 
     <!-- The Hero Section -------------------------------------------------------------------------------------- -->
     <section class="hero">
         <div class="hero-text">Eric's website 🦢</div>
     </section>
-<nav class="navbar"> 
-  <ul> 
-    <li><a href="#home" class="nav-button">Fusion</a></li> 
-    <li><a href="#imagecreation" class="nav-button">Image Creation</a></li> 
-    <li><a href="#binaryand3dmodelling" class="nav-button">Binary and 3D Modelling</a></li> 
-  </ul> 
-</nav>
+    
+    <nav class="navbar"> 
+      <ul> 
+        <li><a href="#home" class="nav-button">Fusion</a></li> 
+        <li><a href="#imagecreation" class="nav-button">Image Creation</a></li> 
+        <li><a href="#binaryand3dmodelling" class="nav-button">Binary and 3D Modelling</a></li> 
+      </ul> 
+    </nav>
 
-<!-- Topic one ------------------------------------------------------------------------------------------------- -->
-    <!-- The First Topic Section -->
+    <!-- Topic one ------------------------------------------------------------------------------------------------- -->
     <section class="topic" id="home">
-        <!-- the topic title a big bar with text in it -->
         <div class="topic-title">
             <h1>fusion</h1>
         </div>
-        <!-- now a three column grid of images -->
         <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
                 <img src="images/cookie cutter.png" alt="change this too!">
                 <h2 class="topic-card-text">Cookie cutter</h2>
@@ -44,15 +63,13 @@
             </div>
         </div>
     </section>
-<!-- End of topic one------------------------------------------------------------------------------------------ -->
-<section class="imagecreation" id="imagecreation">
-        <!-- the topic title a big bar with text in it -->
+    <!-- End of topic one------------------------------------------------------------------------------------------ -->
+
+    <section class="imagecreation" id="imagecreation">
         <div class="topic-title">
             <h1>image creation and Binary</h1>
         </div>
-        <!-- now a three column grid of images -->
         <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
                 <img src="images/gimppanda.png" alt="change this too!">
                 <h2 class="topic-card-text">pixle art v1</h2>
@@ -71,15 +88,13 @@
             </div>
         </div>
     </section>
-<!-- Copy and paste the section from above to make your next section -->
-<section class="3dmodelling" id="3dmodelling">
-        <!-- the topic title a big bar with text in it -->
+
+    <!-- 3D Modelling and animation Section -->
+    <section class="3dmodelling" id="3dmodelling">
         <div class="topic-title">
             <h1>3D Modelling and animation</h1>
         </div>
-        <!-- now a three column grid of images -->
         <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
                 <img src="images/snow man.png" alt="change this too!">
                 <h2 class="topic-card-text">snow man</h2>
@@ -88,79 +103,35 @@
                 <img src="images/car.png" alt="change this too!">
                 <h2 class="topic-card-text">car</h2>
             </div>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Video Animation</title>
-    <style>
-        /* Centers the video player perfectly on the screen */
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #0f172a; /* Dark background */
-            overflow: hidden;
-        }
 
-        /* Styles the video player box */
-        .video-container {
-            max-width: 80%;
-            max-height: 80vh;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            background-color: #000;
-        }
-
-        video {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="video-container">
-        <!-- 
-          YOUR VIDEO ANIMATION GOES HERE 
-          controls: Shows play/pause buttons and the 25-second timeline bar.
-          autoplay: Starts playing the animation instantly.
-          loop: Makes the 25-second animation repeat forever.
-          muted: Required by modern browsers to allow autoplay to work.
-        -->
-        <video src="0001-0130.mkv" controls autoplay loop muted></video>
-    </div>
-
-</body>
-</html>
+            <!-- FIXED: Cleaned up the extra duplicate html/head/body tags that were here -->
+            <!-- Your 25-second animation clip is safely rendered here alongside the images -->
+            <div class="video-container">
+                <video src="0001-0130.mkv" controls autoplay loop muted></video>
+            </div>
         </div>
-
     </section>
 
+    <!-- Gdevelop Section -->
     <section class="Gdevlop" id="Gdevlop">
-        <!-- the topic title a big bar with text in it -->
         <div class="topic-title">
             <h1>Gdevlop</h1>
         </div>
-        <!-- now a three column grid of images -->
         <div class="topic-content">
-            <!-- one "card" which includes an image with a text below it -->
             <div class="topic-card">
-                <<iframe frameborder="0" src="https://itch.io/embed-upload/19148710?color=333333" allowfullscreen="" width="640" height="380"><a href="https://0gp5.itch.io/flappy-bird">Play Flappy Bird on itch.io</a></iframe>>
+                <!-- FIXED: Removed the accidental double angle brackets << >> around the iframe -->
+                <iframe frameborder="0" src="https://itch.io/embed-upload/19148710?color=333333" allowfullscreen="" width="640" height="380">
+                    <a href="https://0gp5.itch.io/flappy-bird">Play Flappy Bird on itch.io</a>
+                </iframe>
                 <h2 class="topic-card-text">pixle art v1</h2>
             </div>
         </div>
-
     </section>
-    <!-- A Simple Website Footer ------------------------------------------------------------------------------ -->
+
+    <!-- A Simple Website Footer -->
     <footer class="footer">
         <p>&copy; 2026 My Showcase Website By Eric Xu</p>
     </footer>
 
-<!-- The end of the whole page- no more content after this! -->
 </body>
-</html> 
+</html>
