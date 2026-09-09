@@ -3,37 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- FIXED: Added the missing closing angle bracket '>' to the stylesheet link -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric - portofolio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
-    <style>
-        /* ========================================== */
-        /* VIDEO ANIMATION STYLING PLACE             */
-        /* ========================================== */
-        /* Styles the video player layout box inside your 3D section */
-        .video-container {
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            background-color: #000;
-            margin-top: 20px;
-        }
-
-        video {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- The Hero Section -------------------------------------------------------------------------------------- -->
+    <!-- The Hero Section -->
     <section class="hero">
         <div class="hero-text">Eric's website 🦢</div>
     </section>
@@ -42,11 +20,11 @@
       <ul> 
         <li><a href="#home" class="nav-button">Fusion</a></li> 
         <li><a href="#imagecreation" class="nav-button">Image Creation</a></li> 
-        <li><a href="#binaryand3dmodelling" class="nav-button">Binary and 3D Modelling</a></li> 
+        <li><a href="#3dmodelling" class="nav-button">3D Modelling</a></li> 
       </ul> 
     </nav>
 
-    <!-- Topic one ------------------------------------------------------------------------------------------------- -->
+    <!-- Topic one: Fusion -->
     <section class="topic" id="home">
         <div class="topic-title">
             <h1>fusion</h1>
@@ -63,8 +41,8 @@
             </div>
         </div>
     </section>
-    <!-- End of topic one------------------------------------------------------------------------------------------ -->
 
+    <!-- Topic two: Image Creation -->
     <section class="imagecreation" id="imagecreation">
         <div class="topic-title">
             <h1>image creation and Binary</h1>
@@ -89,7 +67,7 @@
         </div>
     </section>
 
-    <!-- 3D Modelling and animation Section -->
+    <!-- Topic three: 3D Modelling and Animation -->
     <section class="3dmodelling" id="3dmodelling">
         <div class="topic-title">
             <h1>3D Modelling and animation</h1>
@@ -104,31 +82,33 @@
                 <h2 class="topic-card-text">car</h2>
             </div>
 
-            <!-- FIXED: Cleaned up the extra duplicate html/head/body tags that were here -->
-            <!-- Your 25-second animation clip is safely rendered here alongside the images -->
-            <div class="video-container">
-                <video src="0001-0130.mkv" controls autoplay loop muted></video>
+            <!-- The Animation fits neatly into the third slot of the grid -->
+            <div class="video-card">
+                <video controls autoplay loop muted>
+                    <source src="0001-0130.mkv" type="video/mp4">
+                    Your browser does not support native video playback.
+                </video>
+                <h2 class="topic-card-text">Animation Clip</h2>
             </div>
         </div>
     </section>
 
-    <!-- Gdevelop Section -->
+    <!-- Topic four: Gdevelop -->
     <section class="Gdevlop" id="Gdevlop">
         <div class="topic-title">
             <h1>Gdevlop</h1>
         </div>
         <div class="topic-content">
             <div class="topic-card">
-                <!-- FIXED: Removed the accidental double angle brackets << >> around the iframe -->
-                <iframe frameborder="0" src="https://itch.io/embed-upload/19148710?color=333333" allowfullscreen="" width="640" height="380">
-                    <a href="https://0gp5.itch.io/flappy-bird">Play Flappy Bird on itch.io</a>
+                <iframe frameborder="0" src="https://itch.io" allowfullscreen="" width="640" height="380">
+                    <a href="https://itch.io">Play Flappy Bird on itch.io</a>
                 </iframe>
-                <h2 class="topic-card-text">pixle art v1</h2>
+                <h2 class="topic-card-text">Flappy Bird</h2>
             </div>
         </div>
     </section>
 
-    <!-- A Simple Website Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2026 My Showcase Website By Eric Xu</p>
     </footer>
